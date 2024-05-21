@@ -1,0 +1,207 @@
+/*https://encycolorpedia.de/003b6f*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #d7dbe6;
+    color: #003b6f;
+}
+
+header {
+    background-image: url(galaxy.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.horizontal {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    padding: 1em;
+    border-bottom: 2px solid white;
+}
+
+.horizontal li {
+    margin-right: 50px;
+}
+
+header a {
+    color: inherit;
+    text-decoration: none;
+    font-style: normal;
+}
+
+header a:hover{
+    color: 	#6f6600;
+}
+
+.corporate {
+    padding: 1em 1em 1em 1em;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.corporatelogo {
+    width: 5%;
+    height: auto;
+    display: block;
+    filter: invert(1) brightness(50);
+}
+
+@media only screen and (max-width: 600px) {
+    .corporatelogo {
+        width: 20%;
+    }
+}
+
+.corporatename {
+    font-size: 1.4rem;
+    padding: 1.5rem;
+    color: white;
+}
+
+/* Media Query für Nildschirme unter 750px*/
+@media only screen and (max-width: 750px) {
+    .corporatename {
+        font-size: 0.9rem;
+    }
+}
+
+main {
+    padding: 1em;
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding: 0.5em 0em 0.2em;
+}
+
+h3 {
+    font-size: 1.3rem;
+    padding: 0.3em 0em 0.2em;
+}
+
+.intro {
+    margin: 1em;
+    font-size: large;
+    padding: 1em 4em;
+}
+
+.intro img {
+    margin: auto;
+    padding: 2em;
+    display: block;
+}
+
+.angebot {
+    margin: 1em;
+}
+
+.angebotsgruppen {
+    padding: 0em 1em 1em;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+hgroup {
+    padding: 0.3em;
+    /* border: 2px solid #003b6f; */
+    color: white;
+    background: rgb(0,59,111);
+    background: linear-gradient(90deg, rgba(0,59,111,1) 0%, rgba(61,88,134,1) 51%, rgba(100,118,157,1) 100%);
+}
+
+.galery-grid {
+    padding: 0.3em;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1.5rem;
+}
+
+.galery-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+/* Media Query für PC-Bildschirme */
+@media only screen and (min-width: 1024px) {
+    .galery-grid {
+        padding: 0em 30em 0em 0em;
+    }
+}
+
+form {
+    padding: 1em 0em 0em 0.5em;
+}
+
+.kontakt legend {
+    margin-left: 0.5em;
+    font-size: large;
+    font-weight: bold;
+}
+
+.formcontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 40%;
+    margin: 0em 0em 1em 0em;
+}
+
+textarea {
+    width: 80%;
+    margin: 0em 0em 1em 0em;
+}
+
+.largebutton {
+    width: 8em;
+    height: 2em;
+    font-size: large;
+    color: white;
+    background-color: #003b6f;
+    margin: 1em 0em 1.5em 2em;
+}
+
+footer{
+    color: white;
+    background-image: url(galaxy.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+footer a {
+    color: inherit;
+    font-style: normal;
+}
+
+footer a:hover{
+    color: 	#6f6600;
+}
+
+.footercontent {
+    padding: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+
+.copyright {
+    padding: 1.5rem;
+    align-self: end;
+}
